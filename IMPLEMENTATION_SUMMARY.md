@@ -1,7 +1,7 @@
 # Complete Test Suite - Implementation Summary
 
 ## Project Overview
-Enhanced Selenium + TestNG automation framework with **5 comprehensive test scenarios** covering:
+Selenium + TestNG automation framework with **5 comprehensive test scenarios** covering:
 - Product ordering and payment
 - Product reviews
 - Brand navigation

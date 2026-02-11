@@ -1,0 +1,30 @@
+# Ignore the actual config file with sensitive data
+src/test/resources/config.properties
+
+# Maven build artifacts
+target/
+*.class
+
+# IDE specific files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Test outputs
+test-output/
+screenshots/
+logs/
+*.log
+
+# Surefire reports (optional - if you don't want to commit test results)
+**/surefire-reports/
+
+# Other sensitive or generated files
+*.tmp
+*.bak

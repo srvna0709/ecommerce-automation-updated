@@ -7,10 +7,9 @@
 
 ## Run Tests in 3 Steps
 
-### Step 1: Extract Project
+### Step 1: Navigate Project Path
 ```bash
-unzip ecommerce-automation.zip
-cd ecommerce-automation
+cd root
 ```
 
 ### Step 2: Run Tests

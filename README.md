@@ -96,28 +96,6 @@ Extract and store test cases:
 - Verify file creation
 - Logout and verify
 
-## Performance Optimizations
-
-The framework has been optimized for faster execution:
-
-✅ **Reduced Wait Times**
-- Implicit wait: 10s → 3s
-- Page load timeout: 30s → 15s
-- Explicit waits: 10s → 5s
-- Short waits: 3s → 2s
-
-✅ **Page Load Strategy**
-- Using NORMAL page load strategy
-- Elements interacted with as soon as they're available
-- No waiting for complete page load
-
-✅ **Optimized Timeouts**
-- Thread.sleep reduced across all pages
-- Login wait: 1000ms → 500ms
-- Modal close: 500ms → 300ms
-- Ad close: 500ms → 300ms
-- Download wait: 3000ms → 2000ms
-
 ✅ **Browser Performance**
 - Added `--disable-dev-shm-usage`
 - Added `--no-sandbox`
@@ -188,10 +166,10 @@ mvn -version  # Should show Maven 3.6 or higher
 ### 3. Clone/Extract Project
 ```bash
 # Extract the zip file or clone repository
-cd ecommerce-automation
+cd root
 ```
 
-### 4. Update Configuration (if needed)
+### 4. Update Configuration (must for now)
 Edit `src/test/resources/config.properties`:
 ```properties
 baseUrl=https://automationexercise.com
@@ -308,28 +286,6 @@ OR
 
 PASSED: testProductOrderCompleteFlow
 ```
-
-## Handling Common Issues
-
-### 1. Ad Popup Blocking Test
-- The framework includes `closeAdIfPresent()` method
-- Automatically handles ad dismissal when detected
-- No manual intervention required
-
-### 2. Element Click Intercepted
-- Uses explicit waits for clickable elements
-- Scrolls to elements before clicking
-- Handles modal overlays automatically
-
-### 3. Download Verification
-- Downloads go to user's Downloads folder
-- Invoice verification reads actual file content
-- Verifies expected text: "Hi Tester" and "Your total purchase amount"
-
-### 4. Login Credentials
-- Default: 
-- Can be changed in config.properties
-- Ensure account exists before running tests
 
 ## Page Object Model Benefits
 
